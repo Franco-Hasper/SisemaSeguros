@@ -85,20 +85,12 @@ public class TablaCliente extends Tabla {
 
     @Override
     public Integer obtenerIdFilaSeleccionada() {
-
-//        Session miSesion = ConexionHibernate.tomarConexion();
-
         try {
             Integer totalFilas = principalCliente.getTablaGrafica().getRowCount();
             Integer filasSeleccionada = principalCliente.getTablaGrafica().getSelectedRow();
             List<Integer> listaResutadosActualesThis = principalCliente.getTablaCliente().getListaResutladosActuales();
             Integer id = utilidad.obtenerId(listaResutadosActualesThis, totalFilas, filasSeleccionada);
-//            miSesion.beginTransaction();
-//            Cliente c = (Cliente) miSesion.get(Cliente.class, id);
-//            miSesion.getTransaction().commit();
-//            this.setIdTabla(c.getId());
             this.setIdTabla(id);
-            //miSesion.close();
         } catch (Exception e) {
         }
         return idTabla;

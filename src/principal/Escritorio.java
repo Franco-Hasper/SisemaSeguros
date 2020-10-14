@@ -17,7 +17,7 @@ public class Escritorio extends JDesktopPane {
     private boolean minimiza = false;
     public boolean cerra = false;
 
-    Image IMG = new ImageIcon(getClass().getResource("/imagenes/escritorio.jpg")).getImage();
+    Image IMG = new ImageIcon(getClass().getResource("/imagenes/escritorio2.jpg")).getImage();
 
     @Override
     public void paintChildren(Graphics g) {

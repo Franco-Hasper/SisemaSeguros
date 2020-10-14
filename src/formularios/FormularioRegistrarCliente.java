@@ -487,6 +487,8 @@ public class FormularioRegistrarCliente extends javax.swing.JDialog {
         if (abm.ejecutarRegistrar()) {
             principalCliente.getTablaCliente().setEstadoConsulta(0);
             principalCliente.getTablaCliente().ejecutarRellenarTabla();
+            principalCliente.getTablaPolizaC().setEstadoConsulta(0);
+            principalCliente.getTablaPolizaC().ejecutarRellenarTabla();
         }
     }//GEN-LAST:event_btnRegistrarActionPerformed
 
@@ -583,7 +585,7 @@ public class FormularioRegistrarCliente extends javax.swing.JDialog {
 
     private void boxProvinciaKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_boxProvinciaKeyPressed
         new TecladoInterfaz().desplazarBox(evt, this.boxLocalidad);
-       
+
     }//GEN-LAST:event_boxProvinciaKeyPressed
 
     private void boxLocalidadKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_boxLocalidadKeyPressed
@@ -639,7 +641,7 @@ public class FormularioRegistrarCliente extends javax.swing.JDialog {
     }//GEN-LAST:event_btnCancelarKeyPressed
 
     private void boxTipoSeguroKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_boxTipoSeguroKeyPressed
-       new TecladoInterfaz().desplazarBox(evt, this.txtNumeroPoliza);
+        new TecladoInterfaz().desplazarBox(evt, this.txtNumeroPoliza);
     }//GEN-LAST:event_boxTipoSeguroKeyPressed
 
     /**

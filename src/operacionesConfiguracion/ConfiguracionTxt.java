@@ -68,7 +68,7 @@ public class ConfiguracionTxt {
             //C:\\Program Files (x86)\\SistemaSeguros\\ConfiguracionColor.txt
             //C:\Users\FRANCO\Documents\NetBeansProjects\SistemaSeguros\dist
             //D:\\SistemaSeguros\\ConfiguracionColor.txt
-            try (Scanner input = new Scanner(new File("D:\\SistemaSeguros\\ConfiguracionColor.txt"))) {
+            try (Scanner input = new Scanner(new File("ConfiguracionColor.txt"))) {
                 while (input.hasNextLine()) {
                     valores.add(input.nextLine());
                 }
@@ -91,7 +91,7 @@ public class ConfiguracionTxt {
      */
     public void guardarColor() {
         try {
-            String ruta = "D:\\SistemaSeguros\\ConfiguracionColor.txt";
+            String ruta = "ConfiguracionColor.txt";
             String contenido = contenidoConfig();
             File file = new File(ruta);
             if (!file.exists()) {

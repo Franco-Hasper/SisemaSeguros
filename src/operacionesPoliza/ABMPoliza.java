@@ -63,6 +63,7 @@ public class ABMPoliza extends ABM {
         // setListaCampos(this.getFormularioEditarPoliza().getListaCampos());
     }
 
+    
     @Override
     public void transaccionRegistrar(Session miSesion) {
 
@@ -110,7 +111,6 @@ public class ABMPoliza extends ABM {
                 if (i == 0) {
                     v.setFechaVencimieto(siEstaVacioFecha(formularioRegistrarPoliza.getrSDateChooser()));
                 } else {
-
                     Date fechaGrafica = siEstaVacioFecha(formularioRegistrarPoliza.getrSDateChooser());
                     v.setFechaVencimieto(fecha.sumarRestarMeses(fechaGrafica, i));
                 }
